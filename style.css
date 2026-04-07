@@ -10,6 +10,7 @@ body {
     background-color: #f0f2f5;
     font-family: 'JetBrains Mono', sans-serif;
     max-width: 800px;
+    height: auto;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -31,6 +32,7 @@ input {
     margin: 0 auto 2rem auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #item-form{
     display: flex;
@@ -47,7 +49,7 @@ input {
 }
 #display-area {
     display: none;
-    grid-template-columns: repeat(auto-fit minmax(5, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     padding: 1rem;
 }
@@ -69,7 +71,7 @@ input {
     background-color: black;
     color: white;
     font-weight: bold;
-    padding: 11px, 20px;
+    padding: 11px 20px;
     cursor: pointer;
     border-color: white;
     border-radius: 5px;

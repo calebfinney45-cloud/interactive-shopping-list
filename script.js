@@ -24,9 +24,6 @@ itemForm.addEventListener('submit', (e) => {
     //Add object to array
     shoppingList.push(newItem);
 
-    //Reset form inputs
-    itemForm.requestFullscreen();
-
     //Call function to update screen
     renderList();
     itemForm.reset();
