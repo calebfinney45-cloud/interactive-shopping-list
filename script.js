@@ -23,7 +23,6 @@ itemForm.addEventListener('submit', (e) => {
 
     //Add object to array
     shoppingList.push(newItem);
-
     //Call function to update screen
     renderList();
     itemForm.reset();
