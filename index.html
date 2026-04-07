@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Shopping List</h1>
+
+    <div id="list-form">
+        <form id="item-form">
+            <input type="text" placeholder="Item" id="product" required>
+            <input type="number" placeholder="Price" id="price" required>
+            <button type="submit" id="addBtn">Add</button>
+        </form>
+    </div>
+
+    <section id="display-area"></section>
+
+    <section class="hiddenPart">
+        <button class="clear-list">Clear</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
