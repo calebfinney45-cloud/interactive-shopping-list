@@ -62,7 +62,6 @@ function renderList() {
     totalPriceElement.textContent = total.toFixed(2);
 }
 
-
 //Empty array and update screen
 clearBtn.addEventListener('click', () => {
     shoppingList = [];//Reset array
