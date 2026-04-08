@@ -7,6 +7,7 @@ const productInput = document.getElementById('product');
 const priceInput = document.getElementById('price');
 const displayArea = document.getElementById('display-area');
 const hiddenSection = document.querySelector('.hiddenPart');
+const totalPriceElement = document.getElementById('total-price');
 const clearBtn = document.querySelector('.clear-list');
 
 //runs when form is submitted(click add/press enter)
@@ -40,7 +41,9 @@ function renderList() {
         displayArea.style.display = 'none';
         hiddenSection.style.display = 'none';
     }
+
     //loop throrugh array and build cards
+    let total = 0;
     shoppingList.forEach((item) => {
         const card = document.createElement('div');
         card.className = 'shopping-card';
@@ -49,10 +52,14 @@ function renderList() {
             <strong>${item.name}</strong>
             <p>Ksh ${item.price.toFixed(2)}</p>
             `;
+            
+            total += item.price;
 
             //push card into display area
             displayArea.appendChild(card);
     });
+    //Update the total price display
+    totalPriceElement.textContent = total.toFixed(2);
 }
 
 
